@@ -1,0 +1,24 @@
+{
+  "name": "restaurantapp",
+  "version": "1.0.0",
+  "description": "full stack table reservation app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcoco1890/restaurantApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcoco1890/restaurantApp/issues"
+  },
+  "homepage": "https://github.com/dcoco1890/restaurantApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
