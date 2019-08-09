@@ -52,7 +52,19 @@ app.get(`/reserve`, function(req, res) {
 
 app.get(`/home`, function(req, res) {
     res.sendFile(path.join(__dirname, "home.html"));
-})
+});
+
+app.post(`/api/tables`, function(req, res) {
+    var newData = req.body;
+
+    if (tableList.length < 5) {
+        tableList.push(newData);
+        res.json(true);
+    } else {
+        reserveList.push(newData);
+        res.json(false);
+    }
+});
 
 
 
